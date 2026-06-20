@@ -1,4 +1,3 @@
-
 type UserType = {
     firstName: string,
     lastName: string,
@@ -27,7 +26,6 @@ const greet = (user:UserType)=>{
 
 greet(user)
 
-
 interface User {
     name:string,
     age: number
@@ -43,7 +41,6 @@ let customer: User = {
 // function sum(a:SumInput,b:SumInput){
 //     return a + b;
 // }
-
 // sum(1,2)
 
 interface Manager{
@@ -63,3 +60,5 @@ let t : TeamLead={
     age:21,
     dept:"IT"
 }
+
+console.log(t)
