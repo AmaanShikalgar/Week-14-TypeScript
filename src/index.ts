@@ -37,3 +37,29 @@ let customer: User = {
     name:"amaan",
     age:21
 }
+
+// type SumInput = string|number;
+
+// function sum(a:SumInput,b:SumInput){
+//     return a + b;
+// }
+
+// sum(1,2)
+
+interface Manager{
+    name:string,
+    age:number
+}
+
+interface Employee{
+    name:string,
+    dept:string
+}
+
+type TeamLead = Manager & Employee
+
+let t : TeamLead={
+    name:"Amaan",
+    age:21,
+    dept:"IT"
+}
