@@ -1,18 +1,17 @@
-const greet = (user:{
-    name: string,
+
+type UserType = {
+    firstName: string,
+    lastName: string,
     age: number,
     address:{
-        city: string,
-        country: string
+        city:string,
+        country:string
     }
-})=>{
-    console.log( "Hi " + user.name)
-    console.log( "His age is " + user.age)
-    console.log("He lives in " + user.address.city , user.address.country)
 }
 
-let user = {
-    name:"amaan",
+let user:UserType = {
+    firstName:"Amaan",
+    lastName:"Shikalgar",
     age:21,
     address:{
         city: "Sangli",
@@ -20,4 +19,21 @@ let user = {
     }
 }
 
+const greet = (user:UserType)=>{
+    console.log( "Hi " + user.firstName , user.lastName)
+    console.log( "His age is " + user.age)
+    console.log("He lives in " + user.address.city , user.address.country)
+}
+
 greet(user)
+
+
+interface User {
+    name:string,
+    age: number
+}
+
+let customer: User = {
+    name:"amaan",
+    age:21
+}
