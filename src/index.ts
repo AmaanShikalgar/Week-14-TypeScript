@@ -60,5 +60,13 @@ let t : TeamLead={
     age:21,
     dept:"IT"
 }
-
 console.log(t)
+
+type k = string|number;
+
+function sum2(a: k, b: k):void {
+    console.log((a as any) + (b as any));
+}
+
+sum2(3,4)
+
