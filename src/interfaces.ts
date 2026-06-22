@@ -94,3 +94,11 @@ class Rectangle extends Shape{
 
 const rect = new Rectangle(1,2);
 rect.area();
+
+interface Point2D{
+    x: number;
+    y: number;
+}
+
+const intermedetiaryPoint = { x:1,y:1,name:"amaan",age:29};
+const p3: Point2D = intermedetiaryPoint;
